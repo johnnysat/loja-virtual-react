@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1em 3em;
+  width: 100%;
+  background-color: #cecece;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
