@@ -4,8 +4,8 @@ import './Header.css';
 function Header(){
   return(
     <div className="navbar">
-    <a src="#">Home</a>
     <div className="searchbar">
+      <a src="#">Home</a>
       <input placeholder="Pesquise aqui"/>
       <button>Ok</button>
     </div>
