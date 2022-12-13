@@ -1,5 +1,6 @@
-.promotions{
+img{
   width: 100%;
-  height: 250px;
-  background-color: black;
+  height: 300px;
+  object-position: 20% 30%;
+  object-fit: cover;
 }
