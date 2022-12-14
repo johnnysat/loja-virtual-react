@@ -1,0 +1,17 @@
+
+.cardChar{
+  width: 200px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.dateChar{
+  display: inline-block;
+  width: 100%;
+}
+
+.dateChar li {
+  border-top: 1px solid #cecece;
+  margin-top: 3px;
+  width: 100%;
+}
