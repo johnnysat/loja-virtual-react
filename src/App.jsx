@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css'
 import Header from './components/Header/Header'
 import Promo from './components/Promo/Promo';
+import GridChar from './components/GridChar/GridChar';
 import CharCard from './components/CharCard/CharCard'
 
 function App() {
@@ -10,9 +11,14 @@ function App() {
     <div className="App">
       <Header/>
       <Promo />
-      <CharCard />
-      
-      
+      <main className="gridChar">
+        <CharCard />
+        <CharCard />
+        <CharCard />
+        <CharCard />
+        <CharCard />
+        <CharCard />
+      </main>
     </div>
   )
 }

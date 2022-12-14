@@ -3,3 +3,12 @@
   padding: 0;
   text-align: center;
 }
+
+.gridChar{
+  padding: 10px 30px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
