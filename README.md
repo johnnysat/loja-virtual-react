@@ -11,3 +11,6 @@
 ## Tecnologias
 ReactJS
 
+## Projeto em Deploy
+Link de acesso ao projeto em <a href="https://loja-virtual-react.vercel.app">tempo real</a>.
+
