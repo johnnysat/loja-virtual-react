@@ -3,6 +3,12 @@
   width: 200px;
   border: 1px solid rgb(0, 0, 0);
   border-radius: 10px;
+
+}
+
+.imgChar{
+  width: 100%;
+  object-position: 60% 30%;
 }
 
 .dateChar{
