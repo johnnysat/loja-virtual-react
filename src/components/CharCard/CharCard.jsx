@@ -1,7 +1,7 @@
 import React from 'react';
-import './CharGrid.css'
+import './CharCard.css'
 
-function CharGrid(){
+function CharCard(){
   return(
     <section className="gridChar">
       <div className="cardChar">
@@ -17,4 +17,4 @@ function CharGrid(){
   )
 }
 
-export default CharGrid;
+export default CharCard;
