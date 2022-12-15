@@ -1,5 +1,6 @@
 .asideBar {
   width: 100%;
+  height: 100%;
   border: 1px solid #000000;
   padding: 10px;
 }
@@ -7,6 +8,7 @@
 .charList {
   display: inline-block;
   padding: 10px;
+  height: 100%;
 }
 
 .charList li {

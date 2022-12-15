@@ -13,6 +13,20 @@ function Aside() {
       <li>Jean</li>
       <li>Amber</li>
       <li>Razor</li>
+      <li>Albedo</li>
+      <li>Mona</li>
+      <li>Diluc</li>
+      <li>Venti</li>
+      <li>Jean</li>
+      <li>Amber</li>
+      <li>Razor</li>
+      <li>Albedo</li>
+      <li>Mona</li>
+      <li>Diluc</li>
+      <li>Venti</li>
+      <li>Jean</li>
+      <li>Amber</li>
+
     </ul>
     </aside>
   )
