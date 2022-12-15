@@ -4,6 +4,7 @@ import Header from './components/Header/Header'
 import Promo from './components/Promo/Promo';
 import CharCard from './components/CharCard/CharCard'
 import Aside from './components/Aside/Aside';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
         </main>
         <Aside/>
       </body>
-      
+      <Footer/>
     </div>
   )
 }
