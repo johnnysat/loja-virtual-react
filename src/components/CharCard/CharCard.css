@@ -9,7 +9,9 @@
 
 .imgChar{
   width: 100%;
-  object-position: 60% 30%;
+  height: 30vh;
+  object-position: 60%;
+  object-fit: cover;
 }
 
 .dateChar{
@@ -21,4 +23,5 @@
   border-top: 1px solid #cecece;
   margin-top: 3px;
   width: 100%;
+  list-style: none;
 }

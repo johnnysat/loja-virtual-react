@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 .navbar {
@@ -11,17 +10,26 @@
   justify-content: space-between;
   padding: 1em 3em;
   width: 100%;
-  background-color: #cecece;
+  background-color: #000000;
 }
 
-a {
+.mainLink {
   padding-right: 1em;
   margin-right: 1em;
   border-right: 1px solid black;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
 }
 
-ul {
+.navbar ul {
   list-style: none;
   display: flex;
   gap: 1rem;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.navbar ul li {
+  cursor: pointer;
 }
