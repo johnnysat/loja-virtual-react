@@ -11,15 +11,18 @@ function App() {
     <div className="App">
       <Header/>
       <Promo />
-      <main className="gridChar">
-        <CharCard />
-        <CharCard />
-        <CharCard />
-        <CharCard />
-        <CharCard />
-        <CharCard />
-      </main>
-      <Aside/>
+      <body className="appBody">
+        <main className="gridChar">
+          <CharCard />
+          <CharCard />
+          <CharCard />
+          <CharCard />
+          <CharCard />
+          <CharCard />
+        </main>
+        <Aside/>
+      </body>
+      
     </div>
   )
 }
