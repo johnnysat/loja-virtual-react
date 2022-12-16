@@ -5,6 +5,8 @@ import Promo from './components/Promo/Promo';
 import CharCard from './components/CharCard/CharCard'
 import Aside from './components/Aside/Aside';
 import Footer from './components/Footer/Footer';
+import MyApi from './Api'
+
 
 function App() {
 
@@ -12,7 +14,7 @@ function App() {
     <div className="App">
       <Header/>
       <Promo />
-      <body className="appBody">
+      <div className="appBody">
         <main className="gridChar">
           <CharCard />
           <CharCard />
@@ -22,7 +24,7 @@ function App() {
           <CharCard />
         </main>
         <Aside/>
-      </body>
+      </div>
       <Footer/>
     </div>
   )
