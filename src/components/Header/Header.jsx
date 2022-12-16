@@ -4,10 +4,10 @@ import './Header.css';
 function Header(){
   return(
   <div className="navbar">
-    <div className="searchBar">
+    <div>
       <a className="mainLink" src="#">Home</a>
-      <input placeholder="Pesquise aqui"/>
-      <button>Ok</button>
+      <input className="searchBar" placeholder="Pesquise aqui"/>
+      <button className="searchButton">Ok</button>
     </div>
     <ul>
       <li>Sobre</li>

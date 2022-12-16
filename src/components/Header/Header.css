@@ -22,6 +22,27 @@
   cursor: pointer;
 }
 
+.searchBar {
+  border-radius: 5px;
+  border: 0;
+  padding: 5px;
+  width: 100px;
+  border-radius: 6px;
+  transition: width 0.2s ease-in;
+}
+
+.searchBar:focus {
+  width: 200px;
+  outline: 3px solid #fff;
+}
+
+.searchButton {
+  border-radius: 5px;
+  border: 0;
+  padding: 5px;
+  cursor: pointer;
+}
+
 .navbar ul {
   list-style: none;
   display: flex;
