@@ -17,3 +17,12 @@
   gap: 10px;
   grid-auto-rows: minmax(100px, 310px);
 }
+
+@media screen and (max-width: 480px) { 
+  
+  .gridChar{
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr);
+  }
+
+}
