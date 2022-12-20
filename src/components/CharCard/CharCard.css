@@ -25,12 +25,6 @@
   list-style: none;
 }
 
-@media screen and (max-width: 750px) { 
-  .gridChar{
-    display: grid;
-    grid-template-columns: repeat(2, 0.1fr);
-  }
-}
 
 @media screen and (max-width: 1265px) { 
   .cardChar{
