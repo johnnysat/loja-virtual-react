@@ -6,24 +6,33 @@
 }
 
 .appBody{
+  padding: 20px;
   display: grid;
-  width: 100%;
   grid-template-columns: 70% 30%;
 }
 
 .gridChar{
-  padding: 10px 30px;
+  padding: 10px;
   display: grid;
-  grid-template-columns: repeat(3, 0.5fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, 310px);
+  grid-template-columns: repeat(3, 0.1fr);
+  gap: 20px;
+  grid-auto-rows: minmax(100px, 350px);
 }
 
-@media screen and (max-width: 480px) { 
+/*(max-width: 924px)*/
+@media screen and (max-width: 750px) { 
   
   .gridChar{
     display: grid;
-    grid-template-columns: repeat(2, 0.5fr);
+    grid-template-columns: repeat(2, 0.1fr);
+  }
+}
+
+@media screen and (max-width: 400px) { 
+  
+  .gridChar{
+    display: grid;
+    grid-template-columns: repeat(1, 0.1fr);
   }
 
 }
