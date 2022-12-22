@@ -2,12 +2,12 @@ import React from 'react';
 import './CharCard.css'
 import imageChar from '../../images/Diluc.png'
 
-function CharCard(){
+function CharCard({name}){
   return(
     <section className="gridChar">
       <div className="cardChar">
         <img className="imgChar" src={imageChar}></img>
-        <h2>Diluc</h2>
+        <h2>{name}</h2>
         <ul className="dateChar">
           <li>Pyro</li>
           <li>Espadão</li>
