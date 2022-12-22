@@ -10,35 +10,42 @@ import axios from 'axios';
 
 
 function App() {
-  const [chars, setChars] = useState([])
-  useEffect(() => {
-    getChars();
-  }, [])
+  const [chars, setChars] = useState([]);
 
   const getChars = () => {
     axios
-    .get("https://api.genshin.dev/characters") 
-    .then((res) => console.log(res.data) )
-    //.then((res) => setChars (res.data) )
-    .catch((err) => console.log(err));
-  }
+      .get("https://api.genshin.dev/characters")
+      .then((res) => {
+        const charPromises = res.data.map((char) =>
+          axios.get(`https://api.genshin.dev/characters/${char}`)
+        );
+
+        Promise.all(charPromises).then((results) => {
+          setChars(results.map((result) => result.data));
+        });
+      })
+      .catch((err) => console.log(err));
+  };
+
+  useEffect(() => {
+    getChars();
+  }, []);
 
   return (
     <div className="App">
-      <Header/>
+      <Header />
       <Promo />
       <div className="appBody">
         <main className="gridChar">
-          {chars.map((char, key) =>( 
-          <CharCard key={key} name={char.name} />
+          {chars.map((char, index) => (
+            <CharCard key={index} char={char} />
           ))}
-
         </main>
-        <Aside/>
+        <Aside />
       </div>
-      <Footer/>
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
