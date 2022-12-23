@@ -1,20 +1,20 @@
 import React from 'react';
 import './CharCard.css'
 import imageChar from '../../images/Diluc.png'
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 function CharCard({ char }) {
   return (
-    <section className="gridChar">
-      <div className="cardChar">
-        <img className="imgChar" src={imageChar}></img>
-        <h2>{char.name}</h2>
-        <ul className="dateChar">
-          <li>{char.vision}</li>
-          <li>{char.weapon}</li>
-          <li>{char.nation}</li>
-        </ul>
-      </div>
-    </section>
+    <Card style={{ width: '13rem' }} className="text-center cardBody">
+        <Card.Img variant="top" src={imageChar}></Card.Img>
+        <Card.Body>
+        <ListGroup.Item className="dateChar">{char.name}</ListGroup.Item>
+        <ListGroup.Item>{char.vision}</ListGroup.Item>
+        <ListGroup.Item>{char.weapon}</ListGroup.Item>
+        <ListGroup.Item>{char.nation}</ListGroup.Item>
+        </Card.Body>
+    </Card>
   );
 }
 

@@ -15,7 +15,7 @@
   display: grid;
   grid-template-columns: repeat(3, 0.1fr);
   gap: 20px;
-  grid-auto-rows: minmax(100px, 350px);
+  grid-auto-rows: minmax(50px, 250px);
 }
 
 /*(max-width: 924px)*/

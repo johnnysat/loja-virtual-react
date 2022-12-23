@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Pagination } from 'react-bootstrap';
+import './Pagination.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function MyPagination({ currentPage, handlePageChange, lastPage }) {
 
   return (
     <>
-      <Pagination>
+      <Pagination className="pagination">
         <Pagination.First onClick={() => handlePageChange(1)} />
         <Pagination.Prev onClick={() => handlePageChange(currentPage - 1)} />
         {[...Array(lastPage).keys()].map((page) => (

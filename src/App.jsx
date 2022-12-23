@@ -59,12 +59,12 @@ function App() {
           ))}
         </main>
         <Aside />
-        <MyPagination
+      </div>
+      <MyPagination
           currentPage={currentPage}
           handlePageChange={(page) => handlePageChange(page)}
           lastPage={lastPage}
         />
-      </div>
       <Footer />
     </div>
   );

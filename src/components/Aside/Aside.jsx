@@ -4,29 +4,14 @@ import './Aside.css';
 function Aside() {
   return (
     <aside className="asideBar">
-    <h3>Lista de Personagens</h3>
+    <h3>Filtre por Visão</h3>
     <ul className="charList">
-      <li>Albedo</li>
-      <li>Mona</li>
-      <li>Diluc</li>
-      <li>Venti</li>
-      <li>Jean</li>
-      <li>Amber</li>
-      <li>Razor</li>
-      <li>Albedo</li>
-      <li>Mona</li>
-      <li>Diluc</li>
-      <li>Venti</li>
-      <li>Jean</li>
-      <li>Amber</li>
-      <li>Razor</li>
-      <li>Albedo</li>
-      <li>Mona</li>
-      <li>Diluc</li>
-      <li>Venti</li>
-      <li>Jean</li>
-      <li>Amber</li>
-
+      <li>Pyro</li>
+      <li>Hydro</li>
+      <li>Electro</li>
+      <li>Anemo</li>
+      <li>Cryo</li>
+      <li>Dendro</li>
     </ul>
     </aside>
   )
