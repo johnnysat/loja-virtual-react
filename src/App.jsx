@@ -34,6 +34,7 @@ function App() {
 
   useEffect(() => {
     getChars();
+    handlePageChange(1);
   }, []);
 
   const updateDisplayedChars = () => {
