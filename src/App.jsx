@@ -21,7 +21,7 @@ function App() {
         const charPromises = res.data.map((char) =>
           axios.get(`https://api.genshin.dev/characters/${char}`)
         );
-
+        
         Promise.all(charPromises).then((results) => {
           setChars(results.map((result) => result.data));
         });
@@ -44,19 +44,20 @@ function App() {
 
   const handlePageChange = (page) => {
     setCurrentPage(Math.min(10, Math.max(1, page)));
-    updateDisplayedChars();
+    updateDisplayedChars(1);
   };
 
   const lastPage = Math.ceil(chars.length / 6);
+
   return (
     <div className='App'>
       <Header />
       <Promo />
       <div className='appBody'>
         <main className='gridChar'>
-          {displayedChars.map((char, index) => (
-            <CharCard key={index} char={char} />
-          ))}
+        {displayedChars.map((char, index) => (
+          <CharCard key={index} char={char} />
+        ))}
         </main>
         <Aside />
       </div>

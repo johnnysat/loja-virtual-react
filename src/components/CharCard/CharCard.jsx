@@ -1,13 +1,17 @@
 import React from 'react';
 import './CharCard.css'
-import imageChar from '../../images/Diluc.png'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
+import ImgTest from '../../images/Diluc.png'
 
-function CharCard({ char }) {
+function CharCard({ char, name }) {
+  const charImage = import(`../../images/${char.name}.png`);
+  
   return (
     <Card style={{ width: '13rem' }} className="text-center cardBody">
-        <Card.Img variant="top" src={imageChar}></Card.Img>
+        <Card.Img variant="top"
+        src={ImgTest}
+        alt={char.name} />
         <Card.Body>
         <ListGroup.Item className="dateChar">{char.name}</ListGroup.Item>
         <ListGroup.Item>{char.vision}</ListGroup.Item>
