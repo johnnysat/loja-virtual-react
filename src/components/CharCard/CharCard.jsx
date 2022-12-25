@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './CharCard.css'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import ImgTest from '../../images/Diluc.png'
 
 function CharCard({ char, name }) {
-  const charImage = import(`../../images/${char.name}.png`);
+  const [charImage, setCharImage] = useState(null);
+
+  useEffect(() => {
+    import(`../../images/${char.name}.png`)
+      .then((image) => {
+      setCharImage(image.default);
+    });
+  
+  }, [char.name]);
+  
   
   return (
     <Card style={{ width: '13rem' }} className="text-center cardBody">
         <Card.Img variant="top"
-        src={ImgTest}
+        src={charImage}
         alt={char.name} />
         <Card.Body>
         <ListGroup.Item className="dateChar">{char.name}</ListGroup.Item>
