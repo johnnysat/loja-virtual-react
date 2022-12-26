@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './CharCard.css'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import ImgTest from '../../images/Diluc.png'
 
 function CharCard({ char, name }) {
   const [charImage, setCharImage] = useState(null);
