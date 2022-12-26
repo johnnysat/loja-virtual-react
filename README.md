@@ -1,17 +1,19 @@
-# Loja Virtual
-
+# Genshin Impact Lista
+Um projeto desenvolvido com intuíto de praticar os conhecimentos em React com consumo de API. 
+É exibido todos os personagens do jogo na tela, com paginação alterando a exibição e carregando
+novos personagens. A componentização foi utilizada principalmente para reaproveitar os cards dos
+personagens, evitando um código muito extenso para cada vez que fosse exibido. 
 ## Planejamento
 [x]Construir o header com menu de navegação.<br>
 [x]Construir o body em grid-layout com cards dos itens a venda.<br>
-[] Versão responsiva com mobile.
-[]Api não possui Id nos itens. Adicionar um Id ao passar por eles. <br>
-[]Construir aside com nomes de personagens para quem não conhecer Genshin poder pesquisar.<br>
-[]Modal quando clicar no banner do personagem para mostrar mais informações. <br>
-[]Mostrar no modal a melhor arma para cada personagem.<br>
-[]Construir footer.<br>
+[x] Versão responsiva com mobile.
+[x] Paginação adicionada.
+[x]Construir footer.<br>
 
 ## Tecnologias
-ReactJS
+- ReactJS
+- Axios
+- React Bootstrap
 
 ## Projeto em Deploy
 Link de acesso ao projeto em <a href="https://loja-virtual-react.vercel.app">tempo real</a>.
