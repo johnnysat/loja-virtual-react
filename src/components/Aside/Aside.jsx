@@ -12,6 +12,37 @@ function Aside() {
         className="visionImg"
         src={Pyro}></img>
       </li>
+
+      <li>
+        <img 
+        className="visionImg"
+        src={Pyro}></img>
+      </li>
+
+      <li>
+        <img 
+        className="visionImg"
+        src={Pyro}></img>
+      </li>
+
+      <li>
+        <img 
+        className="visionImg"
+        src={Pyro}></img>
+      </li>
+
+      <li>
+        <img 
+        className="visionImg"
+        src={Pyro}></img>
+      </li>
+
+      <li>
+        <img 
+        className="visionImg"
+        src={Pyro}></img>
+      </li>
+      
     </ul>
     </aside>
   )
