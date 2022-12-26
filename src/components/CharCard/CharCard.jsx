@@ -18,6 +18,7 @@ function CharCard({ char, name }) {
   return (
     <Card style={{ width: '13rem' }} className="text-center cardBody">
         <Card.Img variant="top"
+        className="imgChar"
         src={charImage}
         alt={char.name} />
         <Card.Body>
