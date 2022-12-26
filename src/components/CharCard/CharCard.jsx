@@ -22,7 +22,7 @@ function CharCard({ char, name }) {
         src={charImage}
         alt={char.name} />
         <Card.Body>
-        <ListGroup.Item className="dateChar">{char.name}</ListGroup.Item>
+        <ListGroup.Item className="dateChar"><strong>{char.name}</strong></ListGroup.Item>
         <ListGroup.Item>{char.vision}</ListGroup.Item>
         <ListGroup.Item>{char.weapon}</ListGroup.Item>
         <ListGroup.Item>{char.nation}</ListGroup.Item>
