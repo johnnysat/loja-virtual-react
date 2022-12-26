@@ -1,20 +1,25 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
 import './Header.css';
 
-function Header(){
-  return(
-  <div className="navbar">
-    <div>
-      <a className="mainLink" src="#">Home</a>
-      <input className="searchBar" placeholder="Pesquise aqui"/>
-      <button className="searchButton">Ok</button>
+
+function Header() {
+  return (
+    <div className="navbar">
+    <Navbar>
+      <Container>
+        <Navbar.Brand 
+          href="#home"><spam className="navText">Genshin Impact</spam></Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            <spam className="navText">Feito por <a href="https://github.com/johnnysat">Johnny Sat</a></spam>
+          </Navbar.Text>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
     </div>
-    <ul>
-      <li>Sobre</li>
-      <li>Contato</li>
-      <li>Carrinho</li>
-    </ul>
-  </div>
   )
 }
 

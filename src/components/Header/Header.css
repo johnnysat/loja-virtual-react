@@ -5,55 +5,16 @@
 }
 
 .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0.7em 3em;
   width: 100%;
   background-color: #000000;
-}
-
-.mainLink {
-  padding-right: 1em;
-  margin-right: 1em;
-  border-right: 1px solid black;
-  font-size: 1.1rem;
-  color: #ffffff;
-  cursor: pointer;
-  text-transform: uppercase;
-}
-
-.searchBar {
-  border-radius: 5px;
-  border: 0;
-  padding: 5px;
-  width: 100px;
-  border-radius: 6px;
-  transition: width 0.2s ease-in;
-}
-
-.searchBar:focus {
-  width: 200px;
-  outline: 3px solid #fff;
-}
-
-.searchButton {
-  border-radius: 5px;
-  border: 0;
-  padding: 5px;
-  cursor: pointer;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  font-size: 1.1rem;
-  color: #ffffff;
-  text-transform: uppercase;
+  padding: 5px 50px 5px 50px !important;
 
 }
 
-.navbar ul li {
-  cursor: pointer;
+.navText {
+  color: white;
+}
+
+.navText a{
+  color: white !important;
 }
