@@ -37,17 +37,17 @@ function App() {
   }, [currentPage, chars]);
 
   const updateDisplayedChars = () => {
-    const startIndex = (currentPage - 1) * 6;
-    const endIndex = startIndex + 6;
+    const startIndex = (currentPage - 1) * 10;
+    const endIndex = startIndex + 10;
     setDisplayedChars(chars.slice(startIndex, endIndex));
   };
 
   const handlePageChange = (page) => {
-    setCurrentPage(Math.min(10, Math.max(1, page)));
+    setCurrentPage(Math.min(6, Math.max(1, page)));
     updateDisplayedChars(1);
   };
 
-  const lastPage = Math.ceil(chars.length / 6);
+  const lastPage = Math.ceil(chars.length / 10);
 
   return (
     <div className='App'>
